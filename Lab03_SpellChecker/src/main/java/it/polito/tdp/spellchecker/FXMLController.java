@@ -49,7 +49,8 @@ public class FXMLController {
     	
     	txtInserito.clear();
     	txtErrori.clear();
-    	txtTempo.setText("");
+    	txtTempo.setText("Time spent on SpellCheck");
+    	cntErrori.setText("Number of errors");
     	
     }
 
@@ -77,7 +78,7 @@ public class FXMLController {
     	}
     	
     	txtErrori.setText(risultato);    	
-    	cntErrori.setText("The text contains "+listaErrate.size()+" words");
+    	cntErrori.setText("The text contains "+listaErrate.size()+" wrong words");
     	
     }
     
@@ -107,7 +108,7 @@ public class FXMLController {
     
     public void setModel(Dictionary model) {
 		this.model = model;
-		boxLingua.getItems().addAll("Italiano", "Inglese");
+		boxLingua.getItems().addAll("Italiano","Inglese");
 	}
 
 }
