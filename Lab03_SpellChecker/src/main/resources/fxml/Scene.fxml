@@ -23,7 +23,7 @@
             <HBox>
                <children>
                   <Label text="Choose language" />
-                  <ComboBox fx:id="boxLingua" onAction="#handleLingua" visibleRowCount="2" />
+                  <ComboBox fx:id="boxLingua" onAction="#handleLingua" />
                </children>
             </HBox>
             <TextArea fx:id="txtInserito" editable="false" />

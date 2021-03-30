@@ -7,7 +7,7 @@ public class RichWord {
 	public RichWord(String parola, boolean corretta) {
 		super();
 		this.parola = parola;
-		this.corretta = true;
+		this.corretta = corretta;
 	}
 	
 	public String getParola() {
@@ -16,5 +16,13 @@ public class RichWord {
 	
 	public void setParola(String parola) {
 		this.parola = parola;
+	}
+
+	public void setCorretta() {
+		this.corretta= true;
+	}
+	
+	public boolean isCorretta() {
+		return corretta;
 	}
 }

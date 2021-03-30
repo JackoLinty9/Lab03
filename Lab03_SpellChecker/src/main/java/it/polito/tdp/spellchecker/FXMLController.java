@@ -67,7 +67,7 @@ public class FXMLController {
     	for(String s : ins)
     		listaParole.add(s);
     	
-    	LinkedList<RichWord>listaErrate=new LinkedList<RichWord>(model.spellCheckText(listaParole));
+    	LinkedList<RichWord>listaErrate=new LinkedList<RichWord>(model.spellCheckTextDichotomic(listaParole));
     	
     	double stop = System.nanoTime();
     	txtTempo.setText("SpellCheck completed in "+ (stop-start) +" ns");
